@@ -41,12 +41,6 @@
             this.buttonConvert = new System.Windows.Forms.Button();
             this.textBoxResult = new System.Windows.Forms.TextBox();
             this.buttonSwitch = new System.Windows.Forms.Button();
-            this.comboBoxCurrencies = new System.Windows.Forms.ComboBox();
-            this.labelCurrencyName = new System.Windows.Forms.Label();
-            this.labelOptions = new System.Windows.Forms.Label();
-            this.buttonHistoryRateSync = new System.Windows.Forms.Button();
-            this.listBoxHistoryRate = new System.Windows.Forms.ListBox();
-            this.buttonHistoryRateAsync = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -163,79 +157,12 @@
             this.buttonSwitch.UseVisualStyleBackColor = false;
             this.buttonSwitch.Click += new System.EventHandler(this.buttonSwitch_Click);
             // 
-            // comboBoxCurrencies
-            // 
-            this.comboBoxCurrencies.FormattingEnabled = true;
-            this.comboBoxCurrencies.Location = new System.Drawing.Point(533, 41);
-            this.comboBoxCurrencies.Name = "comboBoxCurrencies";
-            this.comboBoxCurrencies.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxCurrencies.TabIndex = 12;
-            // 
-            // labelCurrencyName
-            // 
-            this.labelCurrencyName.AutoSize = true;
-            this.labelCurrencyName.Location = new System.Drawing.Point(475, 44);
-            this.labelCurrencyName.Name = "labelCurrencyName";
-            this.labelCurrencyName.Size = new System.Drawing.Size(52, 13);
-            this.labelCurrencyName.TabIndex = 13;
-            this.labelCurrencyName.Text = "Currency:";
-            this.labelCurrencyName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // labelOptions
-            // 
-            this.labelOptions.AutoSize = true;
-            this.labelOptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOptions.Location = new System.Drawing.Point(475, 9);
-            this.labelOptions.Name = "labelOptions";
-            this.labelOptions.Size = new System.Drawing.Size(202, 18);
-            this.labelOptions.TabIndex = 14;
-            this.labelOptions.Text = "Currency Historical Rates";
-            // 
-            // buttonHistoryRateSync
-            // 
-            this.buttonHistoryRateSync.BackColor = System.Drawing.SystemColors.Highlight;
-            this.buttonHistoryRateSync.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHistoryRateSync.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonHistoryRateSync.Location = new System.Drawing.Point(391, 72);
-            this.buttonHistoryRateSync.Name = "buttonHistoryRateSync";
-            this.buttonHistoryRateSync.Size = new System.Drawing.Size(173, 33);
-            this.buttonHistoryRateSync.TabIndex = 15;
-            this.buttonHistoryRateSync.Text = "Get Hisoty Rate Sync";
-            this.buttonHistoryRateSync.UseVisualStyleBackColor = false;
-            this.buttonHistoryRateSync.Click += new System.EventHandler(this.buttonHistoryRateSync_Click);
-            // 
-            // listBoxHistoryRate
-            // 
-            this.listBoxHistoryRate.FormattingEnabled = true;
-            this.listBoxHistoryRate.Location = new System.Drawing.Point(391, 113);
-            this.listBoxHistoryRate.Name = "listBoxHistoryRate";
-            this.listBoxHistoryRate.Size = new System.Drawing.Size(370, 199);
-            this.listBoxHistoryRate.TabIndex = 16;
-            // 
-            // buttonHistoryRateAsync
-            // 
-            this.buttonHistoryRateAsync.BackColor = System.Drawing.SystemColors.Highlight;
-            this.buttonHistoryRateAsync.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHistoryRateAsync.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonHistoryRateAsync.Location = new System.Drawing.Point(588, 72);
-            this.buttonHistoryRateAsync.Name = "buttonHistoryRateAsync";
-            this.buttonHistoryRateAsync.Size = new System.Drawing.Size(173, 33);
-            this.buttonHistoryRateAsync.TabIndex = 17;
-            this.buttonHistoryRateAsync.Text = "Get Hisoty Rate Async";
-            this.buttonHistoryRateAsync.UseVisualStyleBackColor = false;
-            // 
             // FormCurrencyConvert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(783, 329);
-            this.Controls.Add(this.buttonHistoryRateAsync);
-            this.Controls.Add(this.listBoxHistoryRate);
-            this.Controls.Add(this.buttonHistoryRateSync);
-            this.Controls.Add(this.labelOptions);
-            this.Controls.Add(this.labelCurrencyName);
-            this.Controls.Add(this.comboBoxCurrencies);
+            this.ClientSize = new System.Drawing.Size(356, 329);
             this.Controls.Add(this.buttonSwitch);
             this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.buttonConvert);
@@ -273,11 +200,5 @@
         private System.Windows.Forms.Button buttonConvert;
         private System.Windows.Forms.TextBox textBoxResult;
         private System.Windows.Forms.Button buttonSwitch;
-        private System.Windows.Forms.ComboBox comboBoxCurrencies;
-        private System.Windows.Forms.Label labelCurrencyName;
-        private System.Windows.Forms.Label labelOptions;
-        private System.Windows.Forms.Button buttonHistoryRateSync;
-        private System.Windows.Forms.ListBox listBoxHistoryRate;
-        private System.Windows.Forms.Button buttonHistoryRateAsync;
     }
 }

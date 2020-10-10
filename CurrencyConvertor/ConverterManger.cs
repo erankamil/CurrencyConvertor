@@ -85,18 +85,18 @@ try other currencies to convert please.");
             }
         }
 
-        //https://marketdata.tradermade.com/api/v1/hour_historical?api_key=api_key&date=2019-10-09-13:00&currency=EURUSD   
+        ////https://marketdata.tradermade.com/api/v1/hour_historical?api_key=api_key&date=2019-10-09-13:00&currency=EURUSD   
 
-        public List<string> GetHourHistoricalRates(string i_CurrencyName)
-        {
-            string currencySymbol;
-            if (CurrencyPairs.TryGetValue(i_CurrencyName, out currencySymbol))
-            {
-                string url = $"{k_ApiUrl}hour_historical?api_key={k_ApiKey}&date=2019-10-10-13:00&currency={currencySymbol}";
-                string jsonString = webResponse(url);
-            }
-            return null;
-        }
+        //public List<string> GetHourHistoricalRates(string i_CurrencyName)
+        //{
+        //    string currencySymbol;
+        //    if (CurrencyPairs.TryGetValue(i_CurrencyName, out currencySymbol))
+        //    {
+        //        string url = $"{k_ApiUrl}hour_historical?api_key={k_ApiKey}&date=2019-10-10-13:00&currency={currencySymbol}";
+        //        string jsonString = webResponse(url);
+        //    }
+        //    return null;
+        //}
 
         public bool IsCurrencySupported(string i_CurrencyName)
         {

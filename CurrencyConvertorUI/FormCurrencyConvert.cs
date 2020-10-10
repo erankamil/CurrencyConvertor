@@ -28,7 +28,6 @@ namespace CurrencyConvertorUI
             {
                 this.comboBoxFrom.Items.Add(currency);
                 this.comboBoxTo.Items.Add(currency);
-                this.comboBoxCurrencies.Items.Add(currency);
             }
         }
 
@@ -99,14 +98,6 @@ namespace CurrencyConvertorUI
                 string currencyTo = this.comboBoxTo.SelectedItem.ToString();
                 this.comboBoxFrom.Text = currencyTo;
                 this.comboBoxTo.Text = currencyFrom;
-            }
-        }
-
-        private void buttonHistoryRateSync_Click(object sender, EventArgs e)
-        {
-            if(checkValidCurrencyInput(this.comboBoxCurrencies.Text))
-            {
-                List<string> list = CurrencyConvertor.GetHourHistoricalRates(this.comboBoxCurrencies.Text);
             }
         }
     }
